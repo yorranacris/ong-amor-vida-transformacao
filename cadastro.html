@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cadastro — Amor, Vida e Transformação</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Cadastro de Voluntário / Doador</h1>
+    <nav>
+      <a href="index.html">Início</a> |
+      <a href="projetos.html">Projetos</a> |
+      <a href="cadastro.html">Cadastro</a>
+    </nav>
+  </header>
+  <main>
+    <form id="form-cadastro">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label>Nome Completo: <input type="text" name="nome" required></label><br>
+        <label>E-mail: <input type="email" name="email" required></label><br>
+        <label>CPF: <input type="text" name="cpf" required></label><br>
+        <label>Telefone: <input type="text" name="telefone" required></label><br>
+        <label>Data de Nascimento: <input type="date" name="nasc" required></label>
+      </fieldset>
+      <fieldset>
+        <legend>Endereço</legend>
+        <label>Endereço: <input type="text" name="endereco" required></label><br>
+        <label>CEP: <input type="text" name="cep" required></label><br>
+        <label>Cidade: <input type="text" name="cidade" required></label><br>
+        <label>Estado: <input type="text" name="estado" required></label>
+      </fieldset>
+      <fieldset>
+        <legend>Interesse</legend>
+        <label><input type="radio" name="perfil" value="voluntario" required> Voluntário</label>
+        <label><input type="radio" name="perfil" value="doador"> Doador</label>
+      </fieldset>
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+  <footer>
+    <p>© <span id="ano"></span> Amor, Vida e Transformação</p>
+  </footer>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
